@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > header {
+    width: 100%;
+    margin: auto;
+    background-color: beige;
+}
+
+header > h1 {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.navbar-header > ul {
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar-header > ul > li {
+    background-color: blueviolet;
+    display: inline;
+    padding: 0 25px 0 0;
+}
+
+main {
+    background-color: aquamarine;
+    border: 5px solid black;
+    padding: 50px;
+    height: 100%;
+}
+
+main > header {
+    background-color: beige;
+}
+
+/*
+    main
+*/
+
+.flexbox-main-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.main-article {
+    height: auto;
+    display: flex;
+    padding: 20px 50px 20px 50px;
+    justify-content: space-around;
+    border-bottom: 3px solid yellow;
+}
+
+.main-article > .flexbox-section {
+    background-color: rgb(174, 127, 255);
+}
+
+.main-article > .flexbox-section > section{
+    background-color: rgb(255, 127, 127);
+    margin-bottom: 60px;
+   
+}
+
+.main-article > .flexbox-section > .section-margin-left {
+    margin-left: 30px;
+    
+}
+
+.main-article > .flexbox-section > section > h2 {
+    background-color: yellow;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+}
+
+.main-article > .flexbox-section > section > p {
+    background-color: rgb(127, 255, 178);
+    border-left: 3px solid yellow;
+    padding: 20px 0 0 30px;
+}
+
+.main-article > aside {
+    background-color: rgb(65, 65, 65);
+    width: 250px;
+    padding: 0 50px 20px 50px;
+    margin-bottom: auto;
+}
+
+.main-article > aside > h2 {
+    background-color: yellow;
+    margin: 0 -50px 0 -50px;
+    padding: 20px;
+}
+
+.main-article > aside > p {
+    margin: 0 -50px 0 -50px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.main-article > aside > blockquote {
+    margin: 0 -50px 0 -50px;
+    padding: 20px 60px 20px 60px;
+    margin-bottom: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    color: white;
+}
+
+.main-article > aside > section {
+    border-top: 3px solid white;
+    padding-top: 30px;
+}
+
+.main-article > aside > section > iframe{
+    width: 250px;
+}
+
+.main-article > aside > blockquote > sup > a{
+    color: yellow;
+}
+
+footer {
+    border: 3px solid red;
+    padding: 20px;
+}
+
+footer > section {
+    background-color: rgb(223, 196, 255);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    body > header{
+      background-color: blue;
+    }
+
+    .navbar-header > ul > li {
+        display: block;
+    }
+
+    main > .main-article {
+        display: inline;
+    }
+
+    .main-article > aside {
+        background-color: rgb(90, 9, 9);
+        width: auto;
+        margin: auto;
+    }
+
+    .main-article > aside > section > iframe{
+        width: 230px;
+    }
+
+    /*
+        footer
+    */
+    footer > section {
+        background-color: rgb(100, 73, 86);
+        text-align: center;
+    }
+  }
