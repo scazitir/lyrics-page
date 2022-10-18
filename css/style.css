@@ -15,17 +15,19 @@ header > h1 {
     text-align: center;
     padding: 15px;
     text-transform: uppercase;
+    font-size: 25px;
+    color: rgb(66, 66, 66);
 }
 
 .navbar-header > ul {
     background-color: rgb(66, 66, 66);
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 .navbar-header > ul > li {
     display: inline;
-    padding: 0 25px 0 0;
+    padding: 0 20px 0 20px;
 }
 
 .navbar-header > ul > li > a{
@@ -115,11 +117,13 @@ main > header {
     padding: 10px;
     width: 120px;
     text-align: center;
+    color: rgb(66,66,66);
 }
 
 .main-article > .flexbox-section > section > p {
     border-left: 3px solid yellow;
     padding: 20px 0 0 30px;
+    color: rgb(66,66,66);
 }
 
 .main-article > aside {
@@ -133,6 +137,7 @@ main > header {
     background-color: yellow;
     margin: 0 -50px 0 -50px;
     padding: 20px;
+    color: rgb(66,66,66);
 }
 
 .main-article > aside > p {
@@ -230,7 +235,7 @@ footer > section > cite > a{
     .main-article > aside > section > iframe{
         width: 350px;
     }
-    
+
     footer > section {
         text-align: center;
     }
