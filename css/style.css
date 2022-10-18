@@ -11,34 +11,88 @@ body > header {
 }
 
 header > h1 {
-    background-color: aquamarine;
+    background-color: yellow;
     text-align: center;
     padding: 15px;
     text-transform: uppercase;
 }
 
 .navbar-header > ul {
-    background-color: aqua;
+    background-color: rgb(66, 66, 66);
     text-align: center;
     padding: 10px;
 }
 
 .navbar-header > ul > li {
-    background-color: blueviolet;
     display: inline;
     padding: 0 25px 0 0;
 }
 
-main {
-    background-color: aquamarine;
-    border: 5px solid black;
-    padding: 50px;
-    height: 100%;
+.navbar-header > ul > li > a{
+    color: white;
+    text-decoration: none;
 }
 
+
+
+
+/*
+TEST
+*/
 main > header {
-    background-color: beige;
+    background-image: url(../img/talking_heads-speaking_in_tongues.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 350px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
+
+.flexbox-container-main-header {
+    margin: 0 8% 0 8%;
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background: rgba(8, 8, 8, 0.8);
+
+}
+
+.flexbox-container-main-header > img {
+    width: 220px; 
+    height: 220px; 
+    padding: 5px;
+    margin: 60px 20px 60px 0;
+}
+
+.header-text {
+    padding: 70px 0px 30px 18px;
+    flex-grow: 2;
+}
+
+.header-text > h1 {
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.header-text > h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+.header-text > h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+    margin-top: 20px;
+    color: rgb(165, 161, 161);
+}
+
+
 
 /*
     main
@@ -55,15 +109,10 @@ main > header {
     display: flex;
     padding: 20px 50px 20px 50px;
     justify-content: space-around;
-    border-bottom: 3px solid yellow;
 }
 
-.main-article > .flexbox-section {
-    background-color: rgb(174, 127, 255);
-}
 
 .main-article > .flexbox-section > section{
-    background-color: rgb(255, 127, 127);
     margin-bottom: 60px;
    
 }
@@ -81,7 +130,6 @@ main > header {
 }
 
 .main-article > .flexbox-section > section > p {
-    background-color: rgb(127, 255, 178);
     border-left: 3px solid yellow;
     padding: 20px 0 0 30px;
 }
@@ -128,43 +176,61 @@ main > header {
     color: yellow;
 }
 
-footer {
-    border: 3px solid red;
-    padding: 20px;
-}
 
 footer > section {
-    background-color: rgb(223, 196, 255);
-    text-align: center;
+    text-align: start;
+    border-top: 3px solid yellow;
+    margin: 20px 100px 20px 100px;
+    padding-top: 20px;
 }
 
+footer > section > cite {
+    font-size: small;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer > section > cite > a{
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    word-wrap: break-word;
+}
 
 
 
 
 @media screen and (max-width: 500px) {
-    body > header{
-      background-color: blue;
-    }
+    
 
     .navbar-header > ul > li {
-        display: block;
+        padding: 5px 20px 5px 0;
+    }
+
+    .header-text{
+        padding-top: 35%;
+    }
+
+    .header-text > h1 {
+        color: yellow;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    
+    .header-text > h2 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+    
+    .header-text > h3 {
+        color: white;
+        text-transform: uppercase;
+        font-size: large;
+        margin-top: 10px;
+        color: rgb(165, 161, 161);
+    }
+
+    .flexbox-container-main-header > img {
+        display: none;
     }
 
     main > .main-article {
@@ -172,20 +238,19 @@ footer > section {
     }
 
     .main-article > aside {
-        background-color: rgb(90, 9, 9);
         width: auto;
         margin: auto;
     }
 
     .main-article > aside > section > iframe{
-        width: 230px;
+        width: 350px;
     }
 
     /*
         footer
     */
     footer > section {
-        background-color: rgb(100, 73, 86);
         text-align: center;
+        
     }
   }
